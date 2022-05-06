@@ -1,0 +1,208 @@
+
+
+
+
+
+.wrapperlogo{
+  
+  perspective: 1000vh;
+  perspective-origin: 50% 800vh;
+  margin:0vh;
+  
+  transform: translateX(-2vh) translateY(-5vh);
+  
+  
+
+}
+
+/* Piramide */
+
+.piramide {
+    
+    
+    transform-style: preserve-3d; 
+    animation: rotate 5s infinite   ;
+    position: absolute;
+    left: 50vh;
+    top: 45vh;
+    transform: rotateY(45deg);
+    /*DEV*/
+    background-color: transparent;
+    
+    transform-origin: 50% 50% 0;
+    z-index: 1;
+       
+}
+.piramidebaixo { 
+    
+    transform-style: preserve-3d; 
+    position: absolute;
+    left: 50vh;
+    top: 50vh;
+    background-color: transparent;
+
+    z-index: 0;
+    transform: rotateZ(180deg) rotateY(45deg);
+    
+    
+    
+    
+}
+
+
+@keyframes rotate {
+    0% { transform: rotateY(45deg); }
+    100% { transform: rotateY(405deg)  ; }
+  }
+
+/*frente*/
+figure.side1 {
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    
+    
+    
+    margin: 0;
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid red;
+    
+    transform: translateZ(1.51vh) rotateX(30deg) ; 
+}
+
+  /*fundo*/
+figure.side3 {
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    margin: 0;
+    
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid red;
+    transform:rotateY(180deg) translateZ(1.51vh) rotateX(30deg)  ;
+    
+}
+  /*esq e dir*/
+
+figure.side2 {
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    margin: 0;
+    
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid #ff0000 ;
+    transform:rotateY(-90deg) translateZ(1.51vh) rotateX(30deg)  ;
+}
+
+figure.side4 {
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    margin: 0;
+    
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid red;
+    transform:rotateY(90deg) translateZ(1.51vh) rotateX(30deg) ;
+}
+  
+
+figure.base{
+    display: inline-block; 
+    position: relative;
+    width: 0px; 
+    margin: 0;
+    opacity: 0.5;
+    height: 0px;
+    border: 3.1vh solid black;
+    
+    bottom: -2.7vh;
+    border-image: linear-gradient(#e66465, #9198e5);
+    border-image-slice: 30%;
+    transform: rotateX(-90deg) ;
+}
+
+/*Piramide Topo */
+
+/*Piramide Baixo */
+
+/*frente*/
+figure.side1baixo{
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    padding: 0;
+    opacity: 1;
+    
+    margin: 0;
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid #ff8000;
+    
+    transform: translateZ(1.51vh) rotateX(30deg) ; 
+}
+
+  /*fundo*/
+figure.side3baixo{
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    margin: 0;
+    opacity: 1;
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid #ff8000;
+    transform:rotateY(180deg) translateZ(1.51vh) rotateX(30deg)  ;
+}
+  /*esq e dir*/
+
+figure.side2baixo{
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    margin: 0;
+    opacity: 1;
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid #ff8000 ;
+    transform:rotateY(-90deg) translateZ(1.51vh) rotateX(30deg)  ;
+}
+
+figure.side4baixo{
+     
+    position: fixed;
+    width: 0px; 
+    height: 0px;
+    margin: 0;
+    opacity: 1;
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    border-bottom: 6vh solid #ff8000;
+    transform:rotateY(90deg) translateZ(1.51vh) rotateX(30deg) ;
+}
+  
+
+figure.basebaixo{
+    display: inline-block; 
+    position: relative;
+    width: 0px; 
+    margin: 0;
+    opacity: 0.4;
+    height: 0px;
+    border: 3.1vh solid transparent;
+    background-color: #ff0080;
+    bottom: -2.7vh;
+    
+    transform: rotateX(-90deg) ;
+}
