@@ -4,10 +4,12 @@
 
 
 .wrapperlogo{
-  
+  display: flex;
+  flex:1 1 200px;
+  width: 100%;
   perspective: 1000vh;
   perspective-origin: 50% 800vh;
-  margin:0vh;
+  margin:0 auto;
   
   transform: translateX(-2vh) translateY(-5vh);
   
